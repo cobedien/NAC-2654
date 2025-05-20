@@ -1,0 +1,16 @@
+---
+vxlan:
+  overlay:
+    networks:
+      - name: CLUS25Net1
+        vrf_name: CLUS25
+        net_id: 30001
+        vlan_id: 2301
+        vlan_name: BlueNet1
+        gw_ip_address: "192.168.20.1/24"
+        network_attach_group: all
+    network_attach_groups:
+      - name: all
+        switches:
+          - { hostname: Site1-L1, ports: [] }
+          - { hostname: Site1-L2, ports: [] }
