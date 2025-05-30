@@ -1,0 +1,14 @@
+---
+vxlan:
+  multisite:
+    overlay:
+      vrfs:
+        - name: CLUS25
+          vrf_id: 50003
+          vlan_id: 2003
+          vrf_attach_group: ltrdcn2654
+      vrf_attach_groups:
+        - name: ltrdcn2654
+          switches:
+            - hostname: Site1-L1
+            - hostname: Site1-L2

@@ -1,0 +1,31 @@
+---
+vxlan:
+  fabric:
+    name: ltrdcn2654
+    type: MFD
+  multisite:
+    child_fabrics:
+      - name: Site1
+        cluster: nd30-1
+    anycast_gateway_mac: 20:20:00:00:00:aa
+    bgw_ip_tag: 54321
+    vtep_loopback_id: 100
+    ipv4_vtep_loopback_range: 10.10.0.0/24
+    overlay_dci:
+      underlay_autoconfig: true
+      deployment_method: 'Centralized_To_Route_Server'
+      ipv4_dci_subnet_range: 10.10.1.0/24
+      ipv4_dci_subnet_mask: 30
+      route_server:
+        peers:
+          - ip_address: 44.4.0.1
+            bgp_asn: "65444"  # Use quotes
+        redistribute_direct: false
+        ip_tag: 54321
+      enable_bgp_bfd: false
+      enable_bgp_log_neighbor_change: true
+      enable_bgp_send_community: true
+      enable_ebgp_password: false
+      enable_trm: false
+      delay_restore: 300
+
