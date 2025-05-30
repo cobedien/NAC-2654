@@ -6,7 +6,12 @@ vxlan:
   multisite:
     child_fabrics:
       - name: Site1
-        cluster: nd30-1
+ #######################################################
+ ##  Under the Cluster variaable put your POD number ###
+ ##  example:                                        ###
+ ##  cluster: nd30-1                                 ### 
+ #######################################################
+        cluster: <<input here>>
     anycast_gateway_mac: 20:20:00:00:00:aa
     bgw_ip_tag: 54321
     vtep_loopback_id: 100
