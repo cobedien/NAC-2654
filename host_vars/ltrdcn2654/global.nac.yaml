@@ -7,7 +7,7 @@ vxlan:
     child_fabrics:
       - name: Site1
  #######################################################
- ##  Under the Cluster variaable put your POD number ###
+ ##  Under the Cluster variable put your POD number  ###
  ##  example:                                        ###
  ##  cluster: nd30-1                                 ### 
  #######################################################
