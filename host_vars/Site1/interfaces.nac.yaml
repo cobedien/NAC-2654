@@ -5,7 +5,7 @@ vxlan:
         interfaces:
           - name: Ethernet1/10
             mode: access
-            description: "BlueNet1 Vlan 2301 Site1-L1 1/5"
+            description: "BlueNet1 Vlan 2301 Site1-L1 1/10"
             mtu: default
             speed: auto
             enabled: true
