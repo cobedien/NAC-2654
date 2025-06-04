@@ -1,0 +1,14 @@
+---
+vxlan:
+  topology:
+    switches:    
+    - name: Site1-L1
+      role: leaf
+      serial_number: 9VFY6ZPT9D0
+      management:
+        default_gateway_v4: << DG >>
+        default_gateway_v6: 2055:55:55:55::55/64
+        management_ipv4_address: << MGMT >>
+        management_ipv6_address: 2055:55:55:55::55/64
+      routing_loopback_id: 0
+      vtep_loopback_id: 1

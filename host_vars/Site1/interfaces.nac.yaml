@@ -1,0 +1,14 @@
+vxlan:
+  topology:
+    switches:
+      - name: Site1-L1
+        interfaces:
+          - name: Ethernet1/10
+            mode: access
+            description: "BlueNet1 Vlan 2301 Site1-L1 1/5"
+            mtu: default
+            speed: auto
+            enabled: true
+            access_vlan: 2301
+            spanning_tree_portfast: false
+            enable_bpdu_guard: false
