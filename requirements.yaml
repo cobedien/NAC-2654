@@ -10,11 +10,8 @@ collections:
     version: 7.1.0
   - name: cisco.dcnm
     version: 3.8.0
-#  - name: cisco.nac_dc_vxlan
-#    version: 0.4.1
-#  - name: https://github.com/CiscoDevNet/ansible-dcnm.git
-#    type: git
-#    version: develop 
+  - name: cisco.nac_dc_vxlan
+    version: 0.4.2
   - name: https://github.com/netascode/ansible-dc-vxlan.git
     type: git
     version: clus
